@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Index Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Money Index Calculator</h1>
+  <form>
+    <div class="form-group">
+      <label for="monthly-income">Monthly Income:</label>
+      <input type="number" id="monthly-income" required>
+    </div>
+    <div class="form-group">
+      <label for="monthly-expenses">Monthly Expenses:</label>
+      <input type="number" id="monthly-expenses" required>
+    </div>
+    <div class="form-group">
+      <label for="savings">Savings:</label>
+      <input type="number" id="savings" required>
+    </div>
+    <div class="form-group">
+      <label for="fixed-cost">Fixed Cost:</label>
+      <input type="number" id="fixed-cost" required>
+    </div>
+    <div class="form-group">
+      <label for="assets">Assets:</label>
+      <input type="number" id="assets" required>
+    </div>
+    <div class="form-group">
+      <label for="liabilities">Liabilities:</label>
+      <input type="number" id="liabilities" required>
+    </div>
+    <button type="button" onclick="calculate()">Calculate</button>
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+
+  <!-- History -->
+  <!-- <div class="history">
+    <h2>Money Index History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Previous Level</th>
+          <th>Current Level</th>
+        </tr>
+      </thead>
+      <tbody id="history-table"> -->
+        <!-- Dynamically populated with JavaScript -->
+      <!-- </tbody>
+    </table>
+  </div> -->
+  
+</body>
+</html>
