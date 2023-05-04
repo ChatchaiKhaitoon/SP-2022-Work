@@ -47,24 +47,39 @@ app.get('/dashboard/Grading', (req, res) => {
 });
 
 app.get('/dashboard/Suggestions', (req, res) => {
-  res.sendFile(__dirname + '/instructions.html');
+//Frontend/Suggestions/Test Suggestion/main.html
+  const filePath = path.join(__dirname, "../Frontend/Suggestions/Test Suggestion/main.html");
+  res.sendFile(filePath);
 });
 
 app.get('/dashboard/Personalized-jars', (req, res) => {
-  res.sendFile(__dirname + '/money-jars.html');
+//Frontend/9Jars-Moneymanagement/Personalized Jars/main.html
+  const filePath = path.join(__dirname, "../Frontend/9Jars-Moneymanagement/Personalized Jars/main.html");
+  res.sendFile(filePath);
 });
 
 app.get('/dashboard/Fixed-jars', (req, res) => {
-  res.sendFile(__dirname + '/fixed-jars.html');
+//
+  const filePath = path.join(__dirname, "../Frontend/9Jars-Moneymanagement/Fixed Jars/test jar/index.html");
+  res.sendFile(filePath);
 });
 
 app.get('/dashboard/Calculation', (req, res) => {
-  res.sendFile(__dirname + '/calculators.html');
+  //Frontend/Calculation/index.html
+  const filePath = path.join(__dirname, "../Frontend/Calculation/index.html");
+  res.sendFile(filePath);
 });
 
 app.get('/dashboard/UserProfile', (req, res) => {
-  res.sendFile(__dirname + '/user-information.html');
+  //Frontend/Personal Info/index.html
+  const filePath = path.join(__dirname, "../Frontend/Personal Info/index.html");
+  res.sendFile(filePath);
 });
+
+app.get('/dashboard/test-grading', (req, res) =>{
+  const filePath = path.join(__dirname, "../Frontend/Gradingpage/Test Grade/index.html");
+  res.sendFile(filePath);
+})
 
 // ---------------------------------------------//
 app.get("/", (req, res) => {
