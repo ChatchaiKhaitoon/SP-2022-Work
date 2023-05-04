@@ -48,6 +48,8 @@ searchButton.addEventListener('click', function (e) {
 
 
 
+
+
 if(window.innerWidth < 768) {
 	sidebar.classList.add('hide');
 } else if(window.innerWidth > 576) {
@@ -74,3 +76,24 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 })
+
+
+const dateDiv = document.getElementById('date-div');
+
+function myDateFunction() {
+  const now = new Date();
+  const nowStr = now.toLocaleString('en-US');
+  dateDiv.innerHTML = nowStr;
+}
+setInterval(myDateFunction, 1000);
+
+
+// Redirect to the result page and pass the result as a parameter
+window.location.href = `C:/Users/khait/Desktop/KT_work/SP-2022 Work/Senior project/Frontend/Gradingpage/Test Grade/index.html${result}`;
+
+// Retrieve the result parameter from the URL
+var urlParams = new URLSearchParams(window.location.search);
+var result = urlParams.get("result");
+
+// Update the HTML element with the result
+document.getElementById("result").innerHTML = "The result is: " + result;
