@@ -103,6 +103,11 @@ CREATE TABLE SuggestandMap (
 (3,'Neutral'),
 (4,'N/A');*\
 
+-- INSERT INTO users (first_name, last_name, email)
+-- VALUES ('John', 'Doe', 'john.doe@example.com');
+
+
+
 
 
 
